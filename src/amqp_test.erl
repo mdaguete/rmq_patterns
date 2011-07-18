@@ -2,7 +2,8 @@
 
 -export([start/0, start_debug/0]).
 
--include("amqp_client.hrl").
+-include_lib("amqp_client/include/amqp_client.hrl").
+
 
 start(Opts) ->
     {ok, Connection} = amqp_connection:start(network, #amqp_params{}),

@@ -1,6 +1,7 @@
 -module(misc).
 
--include("amqp_client.hrl").
+-include_lib("amqp_client/include/amqp_client.hrl").
+
 
 -export([declare_exchanges/1,
          demo_callback/2,

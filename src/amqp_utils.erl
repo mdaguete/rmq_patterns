@@ -3,7 +3,8 @@
 -export([init_controlled_consumer/3, stop_consumer/2, stop_consumers/2]).
 -export([send_msg/3, get_connection_params/0]).
 
--include("amqp_client.hrl").
+-include_lib("amqp_client/include/amqp_client.hrl").
+
 
 get_connection_params() ->
     {ok, User} = application:get_env(rabbit_user),

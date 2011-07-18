@@ -2,7 +2,7 @@
 
 -behaviour(gen_server).
 
--include("amqp_client.hrl").
+-include_lib("amqp_client/include/amqp_client.hrl").
 -include("rmq_patterns.hrl").
 
 -export([init/1, terminate/2, code_change/3, handle_call/3,
