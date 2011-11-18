@@ -6,7 +6,7 @@
 
 
 start(Opts) ->
-    {ok, Connection} = amqp_connection:start(network, #amqp_params{}),
+    {ok, Connection} = amqp_connection:start(#amqp_params_network{}),
     ProxyEx = <<"char_count">>,
     RpcExchange = <<"char_count_server">>,
     ControlExchange = <<"control">>,
